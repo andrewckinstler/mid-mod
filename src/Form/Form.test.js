@@ -9,3 +9,13 @@ describe('Form rendering', () => {
   })
 })
 
+describe('Form state testing', () => {
+  it('should update state when handleChange is invoked', () => {
+    const wrapper = shallow(<Form addReservation={jest.fn()} />);
+    const mockEvent = {target: {name: 'name', value: 'Andrew'}};
+    const expected = 'Andrew';
+
+    wrapper.instance().handleChange(mockEvent);
+    expect(wrapper.state('name')).toEqual(expected)
+  })
+})
