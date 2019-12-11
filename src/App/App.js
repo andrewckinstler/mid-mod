@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { getReservations } from '../apiCalls/apiCalls.js';
-// import CardContainer from '../CardContainer/CardContainer.js'
+import Form from '../Form/Form'
 
 class App extends Component {
   constructor(){
@@ -25,7 +25,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-
+          <Form />
         </div>
         <div className='resy-container'>
             {this.state.reservations.map(res => {
