@@ -19,12 +19,19 @@
 }
 
 .resy-container {
+  padding: 15px;
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
 
 .cards {
+  
+  color: teal;
   background-color: white;
-  margin: 5px;
-  width: 150px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 7px teal solid;
 }

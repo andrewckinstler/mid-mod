@@ -16,7 +16,6 @@ class App extends Component {
       .then(data => {this.setState(
         { reservations: data }
       )
-      console.log(this.state)
     }
   )}
 
@@ -29,8 +28,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-          <Form addReservation={this.addReservation} />
-          {console.log(this.state)}
+          <Form addReservation={this.addReservation} />}
         </div>
         <div className='resy-container'>
             {this.state.reservations.map(res => {
@@ -38,8 +36,8 @@ class App extends Component {
                 <div className='cards'>
                   <h3>{res.name}</h3>
                   <p>{res.date}</p>
-                  <p>{res.number}</p>
                   <p>{res.time}</p>
+                  <p>Number of guests: {res.number}</p>
                 </div>
               )
             })}
