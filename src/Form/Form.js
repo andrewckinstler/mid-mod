@@ -19,7 +19,6 @@ class Form extends Component {
       id: Date.now(),
       ...this.state
     }
-    console.log(newReservation)
     this.props.addReservation(newReservation);
   }
 
