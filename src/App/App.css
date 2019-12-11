@@ -17,3 +17,14 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+.resy-container {
+  display: flex;
+  width: 90%;
+}
+
+.cards {
+  background-color: white;
+  margin: 5px;
+  width: 150px;
+}
