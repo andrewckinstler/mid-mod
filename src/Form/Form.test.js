@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 
 describe('Form rendering', () => {
   it('should match the Form snapshot', () => {
-    const wrapper = shallow(<Form addReservation={jest.fn} />)
+    const wrapper = shallow(<Form addReservation={jest.fn()} />)
   })
 })
+
