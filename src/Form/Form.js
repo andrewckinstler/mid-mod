@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
-  constructor() {
+  constructor(props) {
     super()
     this.state = {
       name: '',
@@ -44,7 +44,7 @@ class Form extends Component {
           value={this.state.numGuests}
           onChange={event => this.handleChange(event)}
           />
-          <button className='makeReservation'>Make Reservation</button>
+          <button className='makeReservation' onClick={this.props.addReservation}>Make Reservation</button>
       </form>
     )
   }
